@@ -59,6 +59,7 @@
   box-sizing: border-box;
   padding: 5px 10px;
   display: block;
+  box-sizing: border-box;
   font-size: 1.1em;
   border: none;
   outline: none;
