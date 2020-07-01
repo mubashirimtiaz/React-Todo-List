@@ -42,4 +42,4 @@ jobs:
 
       # Deploy to surge
       - name: Deploy react app to surge
-        run: surge ./build react-todo-list.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build react-todo-list-webapp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
