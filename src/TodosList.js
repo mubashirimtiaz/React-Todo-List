@@ -23,6 +23,18 @@ export default class TodosList extends Component {
       todos: currState.todos.filter((todo) => todo.id !== id),
     }));
   };
+  updateTodo = (id, updatedTask) => {
+    const newUpdatedTask = this.state.todos.map((todo) => {
+      if (id === todo.id) {
+        return { ...todo, task: updatedTask };
+      } else {
+        return todo;
+      }
+    });
+    this.setState((currState) => ({
+      todos: newUpdatedTask,
+    }));
+  };
 
   render() {
     const todos = this.state.todos.map((todo) => (
@@ -31,6 +43,7 @@ export default class TodosList extends Component {
         id={todo.id}
         task={todo.task}
         removeTodo={this.removeTodo}
+        updateTodo={this.updateTodo}
       />
     ));
     return (
