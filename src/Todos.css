@@ -50,6 +50,8 @@
 }
 .Todos-list-form {
   box-sizing: border-box;
+  width: 100%;
+  padding: 0 3px;
 }
 .Todos-list-form-div {
   box-sizing: border-box;
