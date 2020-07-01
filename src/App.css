@@ -1,10 +1,26 @@
+body {
+  background: linear-gradient(
+    to top,
+    #ffffff,
+    #f7f7ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .App {
   text-align: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 0.8em;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.App-title {
+  color: #282c34;
+  text-shadow: 1px 1px 2px purple;
+  font-size: 2.5em;
+  font-weight: 100;
 }
 
 @media (prefers-reduced-motion: no-preference) {
