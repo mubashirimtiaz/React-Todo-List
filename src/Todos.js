@@ -31,6 +31,9 @@ export default class Todos extends Component {
       isEdited: !currState.isEdited,
     }));
   };
+  handleCompletion = () => {
+    this.props.toggleCompletion(this.props.id);
+  };
   render() {
     const showLiOrInput = this.state.isEdited;
     let result;
@@ -54,9 +57,12 @@ export default class Todos extends Component {
     } else {
       result = (
         <li className="Todos-list">
-          <span className="Todos-task">{this.props.task}</span>
-          {/* <span>
-          </span> */}
+          <span
+            className={`Todos-task ${this.props.completed ? "completed" : ""}`}
+            onClick={this.handleCompletion}
+          >
+            {this.props.task}
+          </span>
           <span>
             <i
               className="Todos-edit fa fa-edit"
