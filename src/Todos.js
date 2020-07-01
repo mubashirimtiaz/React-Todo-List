@@ -39,7 +39,6 @@ export default class Todos extends Component {
     let result;
     if (showLiOrInput) {
       result = (
-        // <li className="Todos-list">
         <form className="Todos-list-form" onSubmit={this.handleSubmit}>
           <div className="Todos-list-form-div">
             <input
@@ -52,7 +51,6 @@ export default class Todos extends Component {
             <button>save</button>
           </div>
         </form>
-        // </li>
       );
     } else {
       result = (

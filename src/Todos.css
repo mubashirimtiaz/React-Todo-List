@@ -48,17 +48,15 @@
 .Todos-delete {
   color: crimson;
 }
-/* .Todos-list-form {
+.Todos-list-form {
   box-sizing: border-box;
-} */
+}
 .Todos-list-form-div {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   margin: 3px 0;
   padding: 7px 0;
-  width: 95%;
-  margin: auto;
 }
 .Todos-list-form-div input {
   padding: 5px 10px;
