@@ -34,6 +34,14 @@ export default class Todos extends Component {
   handleCompletion = () => {
     this.props.toggleCompletion(this.props.id);
   };
+  // componentDidUpdate(prevProps, PrevState) {
+  //   console.log("prevProps", prevProps.task);
+  //   console.log("presentProps", this.props.task);
+  // }
+
+  componentWillUnmount() {
+    console.log("In the ComponentWilUnmount");
+  }
   render() {
     const showLiOrInput = this.state.isEdited;
     let result;

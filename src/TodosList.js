@@ -47,7 +47,10 @@ export default class TodosList extends Component {
       todos: newUpdatedTask,
     }));
   };
-
+  // componentDidUpdate(prevProps, PrevState) {
+  //   console.log("PrevState", PrevState.todos);
+  //   console.log("PresentProps", this.state.todos);
+  // }
   render() {
     const todos = this.state.todos.map((todo) => (
       <Todos
